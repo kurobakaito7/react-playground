@@ -8,7 +8,7 @@ export default function ReactPlayground() {
     return <div style={{height: '100vh'}}>
         <Header />
         <Allotment defaultSizes={[100,100]}>
-            <Allotment.Pane minSize={400}>
+            <Allotment.Pane minSize={500}>
                 <CodeEditor />
             </Allotment.Pane>
             <Allotment.Pane minSize={300}>
