@@ -6,6 +6,7 @@ import { debounce } from "lodash-es";
 
 export default function CodeEditor() {
   const {
+    theme,
     files,
     setFiles,
     selectedFileName,
@@ -17,14 +18,16 @@ export default function CodeEditor() {
   function onEditorChange(value?: string) {
     // console.log(...arguments);
     files[file.name].value = value!;
-    setFiles({...files });
+    setFiles({ ...files });
 
   }
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <FileNameList />
-      <Editor file={file} onChange={debounce(onEditorChange, 500)} />
+      <Editor file={file} onChange={debounce(onEditorChange, 500)} options={{
+        theme: `vs-${theme}`
+      }} />
     </div>
   )
 }

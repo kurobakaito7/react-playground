@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.5.1",
     "@babel/standalone": "^7.25.8",
     "@monaco-editor/react": "^4.6.0",
     "@typescript/ata": "^0.9.7",
