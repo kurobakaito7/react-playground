@@ -1,5 +1,5 @@
 import classnames from 'classnames'
-import React, { useState, useRef, useEffect, MouseEventHandler } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 import styles from './index.module.scss'
 import { Popconfirm } from 'antd'
